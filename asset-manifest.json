@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/medat-training/static/css/main.25922f1a.chunk.css",
+    "main.js": "/medat-training/static/js/main.39245cba.chunk.js",
+    "main.js.map": "/medat-training/static/js/main.39245cba.chunk.js.map",
+    "runtime~main.js": "/medat-training/static/js/runtime~main.63ac7767.js",
+    "runtime~main.js.map": "/medat-training/static/js/runtime~main.63ac7767.js.map",
+    "static/js/2.d698f0be.chunk.js": "/medat-training/static/js/2.d698f0be.chunk.js",
+    "static/js/2.d698f0be.chunk.js.map": "/medat-training/static/js/2.d698f0be.chunk.js.map",
+    "index.html": "/medat-training/index.html",
+    "precache-manifest.fc8188c2db6255b88e5aa8d78a555940.js": "/medat-training/precache-manifest.fc8188c2db6255b88e5aa8d78a555940.js",
+    "service-worker.js": "/medat-training/service-worker.js",
+    "static/css/main.25922f1a.chunk.css.map": "/medat-training/static/css/main.25922f1a.chunk.css.map"
+  }
+}
