@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56bba4412a88b61f157045b308b8bfc1",
+    "revision": "95a9a923f8d3a40f32eb4b83749c9f7d",
     "url": "/medat-training/index.html"
   },
   {
-    "revision": "c89901741deee4b8157b",
-    "url": "/medat-training/static/css/main.25922f1a.chunk.css"
+    "revision": "d62112d6f4dc4da82101",
+    "url": "/medat-training/static/css/main.21a4aa2c.chunk.css"
   },
   {
     "revision": "f352b9380448be8af6fa",
     "url": "/medat-training/static/js/2.d698f0be.chunk.js"
   },
   {
-    "revision": "c89901741deee4b8157b",
-    "url": "/medat-training/static/js/main.39245cba.chunk.js"
+    "revision": "d62112d6f4dc4da82101",
+    "url": "/medat-training/static/js/main.556138fc.chunk.js"
   },
   {
     "revision": "28061208dda1e67b7916",
