@@ -1,0 +1,13 @@
+.mt-de-button {
+  border: 0.25em solid white;
+  border-radius: 1em;
+  background: var(--primary-color-0);
+  color: white;
+  margin: 0 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.mt-de-button:focus {
+  outline: none;
+}

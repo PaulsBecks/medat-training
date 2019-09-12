@@ -1,0 +1,26 @@
+.ltn-de-sqc {
+  display: block;
+}
+
+.ltn-de-sqc-sequence {
+  display: inline-block;
+}
+
+.ltn-de-sqc-sequence > h2 {
+  display: inline-block;
+  margin: 0.5em;
+  font-weight: 500;
+}
+
+.ltn-de-sqc > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ltn-de-sqc > ul > li {
+  margin-bottom: 1em;
+}
+
+.ltn-de-sqc > ul > li > span {
+  margin-left: 0.5em;
+}

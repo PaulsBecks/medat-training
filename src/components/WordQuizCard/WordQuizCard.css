@@ -1,0 +1,12 @@
+.mt-de-word-quiz-card > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mt-de-word-quiz-card > ul > li {
+  margin-bottom: 1em;
+}
+
+.mt-de-word-quiz-card > ul > li > span {
+  margin-left: 0.5em;
+}

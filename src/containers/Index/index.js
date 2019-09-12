@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Words } from '..';
+import { Words, Sequence } from '..';
 import { Navbar } from '../../components';
 
 export default () => {
@@ -11,6 +11,9 @@ export default () => {
             <Navbar selectedQuiz={ selectedQuiz } setSelectedQuiz={ setSelectedQuiz }/>
             {
                 selectedQuiz === 'words' && <Words />
+            }
+            {
+                selectedQuiz === 'sequence' && <Sequence />
             }
         </div>
     );

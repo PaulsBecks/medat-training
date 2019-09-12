@@ -1,5 +1,20 @@
 .mt-de-words-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 4em 10em;
+}
+
+.mt-de-words-page > h1 {
+  text-align: center;
+}
+
+.mt-de-words-page > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 840px) {
+  .mt-de-words-page {
+    padding: 4em 5em;
+  }
 }
