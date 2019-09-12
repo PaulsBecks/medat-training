@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/medat-training/static/css/main.21a4aa2c.chunk.css",
-    "main.js": "/medat-training/static/js/main.556138fc.chunk.js",
-    "main.js.map": "/medat-training/static/js/main.556138fc.chunk.js.map",
+    "main.css": "/medat-training/static/css/main.56911f43.chunk.css",
+    "main.js": "/medat-training/static/js/main.35e5e62e.chunk.js",
+    "main.js.map": "/medat-training/static/js/main.35e5e62e.chunk.js.map",
     "runtime~main.js": "/medat-training/static/js/runtime~main.63ac7767.js",
     "runtime~main.js.map": "/medat-training/static/js/runtime~main.63ac7767.js.map",
-    "static/js/2.d698f0be.chunk.js": "/medat-training/static/js/2.d698f0be.chunk.js",
-    "static/js/2.d698f0be.chunk.js.map": "/medat-training/static/js/2.d698f0be.chunk.js.map",
+    "static/js/2.47398f46.chunk.js": "/medat-training/static/js/2.47398f46.chunk.js",
+    "static/js/2.47398f46.chunk.js.map": "/medat-training/static/js/2.47398f46.chunk.js.map",
     "index.html": "/medat-training/index.html",
-    "precache-manifest.3efa0ac189e58e5939c226facc329ad4.js": "/medat-training/precache-manifest.3efa0ac189e58e5939c226facc329ad4.js",
+    "precache-manifest.aa59a55cb7bf71afec08fd62791c3b7d.js": "/medat-training/precache-manifest.aa59a55cb7bf71afec08fd62791c3b7d.js",
     "service-worker.js": "/medat-training/service-worker.js",
-    "static/css/main.21a4aa2c.chunk.css.map": "/medat-training/static/css/main.21a4aa2c.chunk.css.map"
+    "static/css/main.56911f43.chunk.css.map": "/medat-training/static/css/main.56911f43.chunk.css.map"
   }
 }
