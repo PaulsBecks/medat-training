@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/medat-training/precache-manifest.aa59a55cb7bf71afec08fd62791c3b7d.js"
+  "/medat-training/precache-manifest.74a47d29f6071dddd31c1e5ff0e36876.js"
 );
 
 self.addEventListener('message', (event) => {
