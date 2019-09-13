@@ -62,6 +62,7 @@ export default ({
           onClick={() => {
             handleNextClick();
           }}
+          className="mt-de-sequence-quiz-card-skip-button"
         >
           Skip
         </Button>

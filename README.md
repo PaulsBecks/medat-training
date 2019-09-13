@@ -1,3 +1,14 @@
+# aufgabenmed.at
+
+This project is a webage for students wanting to learn for the medat tests. It no official learning material and should not be seen as such. But books are expensive and the app costs quite a bit for the features it holds. So I created a free version with endless tasks.
+
+[Website](https://aufgabenmed.at)
+
+## Features
+
+- Sequences: One has to figure out the two proceeding values of a sequence of numbers e.g. 1-2-3-4-5-6 -- yeah right the answer is 7-8, nerd
+- Words: One looks at a shuffled word and has to figgure out with which letter the word beginns e.g. lleho -- amazing yes it's hello genious
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,4 +77,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
 # medat-training

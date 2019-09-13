@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
 }
+.mt-de-word-quiz-card > h2 {
+  text-align: center;
+  letter-spacing: 0.125rem;
+}
 
 .mt-de-word-quiz-card > ul {
   list-style-type: none;
@@ -15,4 +19,8 @@
 
 .mt-de-word-quiz-card > ul > li > span {
   margin-left: 0.5em;
+}
+
+.mt-de-word-quiz-card-skip-button {
+  background: var(--secondary-color-2-1) !important;
 }

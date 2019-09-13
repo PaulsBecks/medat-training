@@ -4,3 +4,4 @@ export { default as Navbar } from "./Navbar";
 export { default as Button } from "./Button";
 export { default as History } from "./History";
 export { default as Icon } from "./Icon";
+export { default as BottomBar } from "./BottomBar";

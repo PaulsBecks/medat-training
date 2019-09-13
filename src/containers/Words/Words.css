@@ -1,5 +1,6 @@
 .mt-de-words-page {
-  padding: 4em 10em;
+  padding: 1em 10em;
+  margin-bottom: 4em;
 }
 
 .mt-de-words-page > h1 {
@@ -15,6 +16,6 @@
 
 @media (max-width: 840px) {
   .mt-de-words-page {
-    padding: 4em 5em;
+    padding: 1em 5em;
   }
 }

@@ -28,6 +28,10 @@
   margin-left: 0.5em;
 }
 
+.mt-de-sequence-quiz-card-skip-button {
+  background: var(--secondary-color-2-1) !important;
+}
+
 @media (max-width: 640px) {
   .ltn-de-sqc-sequence > h2 {
     font-size: 0.8rem;

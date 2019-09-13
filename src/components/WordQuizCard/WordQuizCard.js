@@ -56,7 +56,7 @@ export default ({ word, onNextClick }) => {
       {!showSolution && (
         <Button onClick={() => setShowSolution(true)}>Lösung</Button>
       )}
-      {!showSolution && <Button onClick={() => onNextClick()}>Skip</Button>}
+      {!showSolution && <Button className="mt-de-word-quiz-card-skip-button" onClick={() => onNextClick()}>Skip</Button>}
       {showSolution && (
         <Button onClick={() => onNextClick(selectedChar)}>Nächstes Wort</Button>
       )}

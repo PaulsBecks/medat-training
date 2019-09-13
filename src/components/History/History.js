@@ -45,7 +45,10 @@ export default ({
                 className={`mt-de-history-list-item mt-de-history-list-item-${status.toLowerCase()}`}
                 onMouseOver={() => setMouseOver(i)}
                 onMouseLeave={() => setMouseOver()}
-                onClick={() => handleElementClick(element)}
+                onClick={() => {
+                  document.location.href = "#";
+                  handleElementClick(element);
+                }}
               >
                 {isWords && <span>{element.word}</span>}
                 {isSequences && (
@@ -68,7 +71,10 @@ export default ({
           })}
       </ul>
       {!showAllElements && (
-        <Button onClick={() => setMaxElements(maxElements + HISTORY_STEP_SIZE)}>
+        <Button
+          className="mt-de-history-more-button"
+          onClick={() => setMaxElements(maxElements + HISTORY_STEP_SIZE)}
+        >
           Mehr
         </Button>
       )}

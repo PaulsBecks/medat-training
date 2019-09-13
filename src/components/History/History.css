@@ -36,8 +36,9 @@
   margin: 1em 0;
   padding: 0 2em;
 }
+
 .mt-de-history-list-item-skipped {
-  border-left: 3px solid var(--secondary-color-2-2);
+  border-left: 3px solid var(--secondary-color-2-1);
 }
 
 .mt-de-history-list-item-correct {
@@ -58,4 +59,15 @@
 
 .mt-de-history-list-item-sequence-number {
   margin: 0 0.25em;
+}
+
+.mt-de-history-more-button {
+  width: 100%;
+}
+
+@media (max-width: 840px) {
+  .mt-de-history-list {
+    max-height: none;
+    overflow-y: auto;
+  }
 }

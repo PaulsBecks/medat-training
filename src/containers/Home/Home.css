@@ -1,0 +1,48 @@
+.mt-de-home {
+  padding: 1em 10em;
+  margin-bottom: 4em;
+}
+
+.mt-de-home-header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.mt-de-home-header-content {
+  max-width: 30em;
+}
+
+.mt-de-home-header-icon {
+  width: 10em;
+}
+
+.mt-de-home-header-icon > svg {
+  fill: var(--secondary-color-1-4);
+}
+
+.mt-de-home-words-button {
+  background: var(--secondary-color-2-4);
+}
+
+.mt-de-home-sequences-button {
+  background: var(--secondary-color-1-2);
+}
+
+.mt-de-home-categories-section {
+  padding: 2em 0;
+}
+.mt-de-home-categories-section > h2 {
+  text-align: center;
+}
+.mt-de-home-categories-section > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 840px) {
+  .mt-de-home {
+    padding: 1em 4em;
+  }
+}

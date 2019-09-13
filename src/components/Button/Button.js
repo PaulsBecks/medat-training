@@ -2,8 +2,8 @@ import React from "react";
 
 import "./Button.css";
 
-export default props => (
-  <button className="mt-de-button" {...props}>
+export default ({ className, ...props }) => (
+  <button className={`mt-de-button ${className || ""}`} {...props}>
     {props.children}
   </button>
 );

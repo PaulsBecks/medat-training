@@ -3,9 +3,12 @@
   border-radius: 1em;
   background: var(--primary-color-0);
   color: white;
-  margin: 0 0.5em;
+  margin: 0 0.125em;
   padding: 0.5em;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  min-width: 8em;
 }
 
 .mt-de-button:focus {

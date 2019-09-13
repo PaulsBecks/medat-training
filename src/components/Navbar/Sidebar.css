@@ -3,10 +3,15 @@
   justify-content: space-between;
   background: var(--primary-color-0);
   color: white;
-  padding: 0.5em 1em;
+  padding: 0.5em 10em;
 }
 
-.mt-de-navbar > div {
-  display: flex;
-  justify-content: space-between;
+.mt-de-navbar > h2 {
+  margin: 0;
+}
+
+@media (max-width: 840px) {
+  .mt-de-navbar {
+    padding: 0.5em 4em;
+  }
 }

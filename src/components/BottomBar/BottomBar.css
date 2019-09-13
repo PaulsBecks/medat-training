@@ -1,0 +1,45 @@
+.mt-de-bottom-bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  height: 2em;
+  right: 0;
+  left: 0;
+  padding: 1em 10em;
+  background: var(--primary-color-0);
+}
+
+.mt-de-bottom-bar-icon-button {
+  height: 3em;
+  width: 3em;
+  min-width: 0;
+}
+
+.mt-de-bottom-bar-icon-button > svg {
+  fill: white;
+}
+
+.mt-de-bottom-bar-words-button {
+  background: var(--secondary-color-2-4);
+}
+
+.mt-de-bottom-bar-sequences-button {
+  background: var(--secondary-color-1-2);
+}
+
+@media (max-width: 840px) {
+  .mt-de-bottom-bar {
+    padding: 1em 4em;
+  }
+}
+
+@media (max-width: 640px) {
+  .mt-de-bottom-bar {
+    padding: 1em 1em;
+  }
+  .mt-de-bottom-bar-button {
+    min-width: auto;
+  }
+}
