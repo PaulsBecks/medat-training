@@ -16,8 +16,6 @@ function getNextNumber(last, dif) {
 const getRandomNumber = max => Math.round(Math.random() * max - max / 2);
 
 function generateSolution(sequence, dif1, dif2, type) {
-  console.log(sequence, dif1, dif2, type);
-
   if (type === SEQUENTIAL) {
     const first = getNextNumber(sequence[sequence.length - 1], dif1);
     const second = getNextNumber(first, dif2);
@@ -82,7 +80,6 @@ export default function generateSequence() {
   let i = 0;
   while (i < 3) {
     const e = `${gr()};${gr()}`;
-    console.log(a, a.indexOf(e), e);
     if (a.indexOf(e) < 0) {
       const sa = e.split(";");
       a.push(e);

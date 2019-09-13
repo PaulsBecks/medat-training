@@ -8,6 +8,7 @@
 
 .mt-de-navbar > h2 {
   margin: 0;
+  font-family: "Galada", cursive;
 }
 
 @media (max-width: 840px) {

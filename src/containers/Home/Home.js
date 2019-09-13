@@ -7,7 +7,7 @@ export default ({ setSelectedQuiz }) => (
   <div className="mt-de-home">
     <div className="mt-de-home-header">
       <div className="mt-de-home-header-content">
-        <h1>Kostenlose Aufgaben für den Medizintest in Österreich</h1>
+        <h1>Kostenlose Aufgaben für den Medizinertest in Österreich</h1>
         <p>
           Auf dieser Webseite findest du kostenlos Aufgaben für deine Medizin
           Aufnahmeprüfung. Aktuell kannst du Zahlenfolgen und vermischte Wörter
