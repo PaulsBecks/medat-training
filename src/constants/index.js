@@ -5,3 +5,13 @@ export const CARD_STATUSES = {
   CORRECT: "CORRECT",
   WRONG: "WRONG"
 };
+
+export const DIF_TYPES = {
+  PLUS: "PLUS",
+  TIMES: "TIMES"
+};
+
+export const SEQUENCE_TYPES = {
+  PERIODIC: "PERIODIC",
+  SEQUENTIAL: "SEQUENTIAL"
+};

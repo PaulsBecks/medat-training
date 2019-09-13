@@ -55,3 +55,7 @@
 .mt-de-history-list-item-icon {
   max-width: 2em;
 }
+
+.mt-de-history-list-item-sequence-number {
+  margin: 0 0.25em;
+}

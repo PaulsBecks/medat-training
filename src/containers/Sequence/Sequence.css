@@ -1,6 +1,24 @@
 .mt-de-sequence-page {
+  padding: 4em 8em;
+}
+
+.mt-de-sequence-page > h1 {
+  text-align: center;
+}
+
+.mt-de-sequence-page > div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4em 10em;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (max-width: 840px) {
+  .mt-de-sequence-page {
+    padding: 4em 2em;
+  }
+}
+
+@media (max-width: 640px) {
+  .mt-de-sequence-page {
+    padding: 4em 1em;
+  }
 }

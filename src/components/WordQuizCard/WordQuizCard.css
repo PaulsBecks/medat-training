@@ -1,3 +1,8 @@
+.mt-de-word-quiz-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .mt-de-word-quiz-card > ul {
   list-style-type: none;
   padding: 0;
@@ -5,6 +10,7 @@
 
 .mt-de-word-quiz-card > ul > li {
   margin-bottom: 1em;
+  cursor: pointer;
 }
 
 .mt-de-word-quiz-card > ul > li > span {

@@ -7,11 +7,16 @@ import "./History.css";
 const HISTORY_STEP_SIZE = 10;
 const { SKIPPED, CORRECT, WRONG } = CARD_STATUSES;
 
-export default ({ elements = [], handleElementClick }) => {
-  const [maxWords, setMaxWords] = useState(HISTORY_STEP_SIZE);
+export default ({
+  elements = [],
+  handleElementClick,
+  isWords,
+  isSequences
+}) => {
+  const [maxElements, setMaxElements] = useState(HISTORY_STEP_SIZE);
   const [mouseOver, setMouseOver] = useState();
-  const showAllWords = elements.length <= maxWords;
-  const sliceFrom = showAllWords ? 0 : elements.length - maxWords;
+  const showAllElements = elements.length <= maxElements;
+  const sliceFrom = showAllElements ? 0 : elements.length - maxElements;
   const count = elements.reduce(
     ({ correct, wrong, skipped }, element) => ({
       correct: element.status === CORRECT ? correct + 1 : correct,
@@ -33,7 +38,7 @@ export default ({ elements = [], handleElementClick }) => {
           .slice(sliceFrom)
           .reverse()
           .map((element, i) => {
-            const { word, status } = element;
+            const { status } = element;
             const mouseIsOver = mouseOver === i;
             return (
               <li
@@ -42,7 +47,16 @@ export default ({ elements = [], handleElementClick }) => {
                 onMouseLeave={() => setMouseOver()}
                 onClick={() => handleElementClick(element)}
               >
-                <span>{word}</span>
+                {isWords && <span>{element.word}</span>}
+                {isSequences && (
+                  <div>
+                    {element.sequence.map(s => (
+                      <span className="mt-de-history-list-item-sequence-number">
+                        {s}
+                      </span>
+                    ))}
+                  </div>
+                )}
                 <div className="mt-de-history-list-item-icon">
                   {!mouseIsOver && status === SKIPPED && <Icon.Skipped />}
                   {!mouseIsOver && status === WRONG && <Icon.Failed />}
@@ -53,8 +67,8 @@ export default ({ elements = [], handleElementClick }) => {
             );
           })}
       </ul>
-      {!showAllWords && (
-        <Button onClick={() => setMaxWords(maxWords + HISTORY_STEP_SIZE)}>
+      {!showAllElements && (
+        <Button onClick={() => setMaxElements(maxElements + HISTORY_STEP_SIZE)}>
           Mehr
         </Button>
       )}

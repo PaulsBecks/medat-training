@@ -41,7 +41,7 @@ export default ({ word, onNextClick }) => {
       <p>Dieses Wort beginnt mit dem Buchstaben:</p>
       <ul>
         {shuffledQuizChars.split("").map(char => (
-          <li key={char}>
+          <li key={char} onClick={() => setSelectedChar(char)}>
             <input
               type="radio"
               name="quiz-char"

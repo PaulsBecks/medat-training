@@ -59,7 +59,7 @@ export default () => {
         )}
         {wordsSolved && (
           <History
-            words
+            isWords
             elements={wordsSolved}
             handleElementClick={word => setReviewWord(word)}
           />

@@ -1,9 +1,11 @@
 .ltn-de-sqc {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .ltn-de-sqc-sequence {
   display: inline-block;
+  align-self: center;
 }
 
 .ltn-de-sqc-sequence > h2 {
@@ -19,8 +21,15 @@
 
 .ltn-de-sqc > ul > li {
   margin-bottom: 1em;
+  cursor: pointer;
 }
 
 .ltn-de-sqc > ul > li > span {
   margin-left: 0.5em;
+}
+
+@media (max-width: 640px) {
+  .ltn-de-sqc-sequence > h2 {
+    font-size: 0.8rem;
+  }
 }
