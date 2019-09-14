@@ -43,6 +43,7 @@ export default ({
             return (
               <li
                 className={`mt-de-history-list-item mt-de-history-list-item-${status.toLowerCase()}`}
+                key={element.id}
                 onMouseOver={() => setMouseOver(i)}
                 onMouseLeave={() => setMouseOver()}
                 onClick={() => {
@@ -53,8 +54,11 @@ export default ({
                 {isWords && <span>{element.word}</span>}
                 {isSequences && (
                   <div>
-                    {element.sequence.map(s => (
-                      <span className="mt-de-history-list-item-sequence-number">
+                    {element.sequence.map((s, i) => (
+                      <span
+                        key={`${s}:${i}`}
+                        className="mt-de-history-list-item-sequence-number"
+                      >
                         {s}
                       </span>
                     ))}

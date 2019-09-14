@@ -25,14 +25,17 @@ export default ({
   return (
     <div className="ltn-de-sqc">
       <div className="ltn-de-sqc-sequence">
-        {sequence.map(num => (
-          <h2>{num}</h2>
+        {sequence.map((num, i) => (
+          <h2 key={`${num}:${i}`}>{num}</h2>
         ))}
       </div>
       <p>Diese Folge kann mit folgenden Zahlen erweitert werden:</p>
       <ul>
         {shuffledSolutions.map(([dif1, dif2], i) => (
-          <li onClick={() => setSelectedSolution(i)}>
+          <li
+            onClick={() => setSelectedSolution(i)}
+            key={JSON.stringify([dif1, dif2])}
+          >
             <input
               type="radio"
               name="quiz-char"

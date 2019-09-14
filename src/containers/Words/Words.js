@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { WordQuizCard, History } from "../../components";
 import { words } from "../../constants";
 import { useLocalStorage } from "../../hooks";
 import { CARD_STATUSES } from "../../constants";
+import { sendGAEvent } from "../../helpers/googleAnalytics";
 import "./Words.css";
 
 const { SKIPPED, CORRECT, WRONG } = CARD_STATUSES;
 
 export default () => {
   const [wordsSolved, setWordsSolved] = useLocalStorage("wordsSolved", []);
+  useMemo(() => {
+    sendGAEvent("Word", "new", wordsSolved.length);
+  }, [wordsSolved]);
   const [reviewWord, setReviewWord] = useState();
 
   const wordIndex = wordsSolved.length;

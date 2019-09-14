@@ -3,6 +3,7 @@ import { SequenceQuizCard, History } from "../../components";
 import { useLocalStorage } from "../../hooks";
 import { generateSequence } from "../../helpers";
 import { CARD_STATUSES } from "../../constants";
+import { sendGAEvent } from "../../helpers/googleAnalytics";
 
 import "./Sequence.css";
 
@@ -13,6 +14,11 @@ export default () => {
     "sequencesSolved",
     []
   );
+
+  useMemo(() => {
+    sendGAEvent("Sequence", "new", sequencesSolved.length);
+  }, [sequencesSolved]);
+
   const [reviewSequence, setReviewSequence] = useState();
 
   const { sequence, difs, sequenceType, solutions, correctSolution } = useMemo(
