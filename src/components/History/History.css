@@ -61,6 +61,10 @@
   margin: 0 0.25em;
 }
 
+.mt-de-history-list-item-number-wrapper {
+  overflow: hidden;
+}
+
 .mt-de-history-more-button {
   width: 100%;
 }

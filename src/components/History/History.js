@@ -11,7 +11,7 @@ export default ({
   elements = [],
   handleElementClick,
   isWords,
-  isSequences
+  isSequences,
 }) => {
   const [maxElements, setMaxElements] = useState(HISTORY_STEP_SIZE);
   const [mouseOver, setMouseOver] = useState();
@@ -21,7 +21,7 @@ export default ({
     ({ correct, wrong, skipped }, element) => ({
       correct: element.status === CORRECT ? correct + 1 : correct,
       wrong: element.status === WRONG ? wrong + 1 : wrong,
-      skipped: element.status === SKIPPED ? skipped + 1 : skipped
+      skipped: element.status === SKIPPED ? skipped + 1 : skipped,
     }),
     { correct: 0, wrong: 0, skipped: 0 }
   );
@@ -53,7 +53,7 @@ export default ({
               >
                 {isWords && <span>{element.word}</span>}
                 {isSequences && (
-                  <div>
+                  <div className="mt-de-history-list-item-number-wrapper">
                     {element.sequence.map((s, i) => (
                       <span
                         key={`${s}:${i}`}

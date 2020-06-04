@@ -13,7 +13,7 @@ function getNextNumber(last, dif) {
   return dif.number;
 }
 
-const getRandomNumber = max => Math.round(Math.random() * max - max / 2);
+const getRandomNumber = (max) => Math.round(Math.random() * max - max / 2);
 
 function generateSolution(sequence, dif1, dif2, type) {
   if (type === SEQUENTIAL) {
@@ -39,9 +39,13 @@ const getDiff = () => {
   }
   return {
     type,
-    number
+    number,
   };
 };
+
+function compareDiffs(diff1, diff2) {
+  return diff1.type === diff2.type && diff1.number === diff2.number;
+}
 
 function execTimes(f, times) {
   let r = [];
@@ -56,7 +60,22 @@ export default function generateSequence() {
   let sequenceType = Object.keys(SEQUENCE_TYPES)[Math.floor(Math.random() * 2)];
   const firstNumber = getRandomNumber(100);
   sequence.push(firstNumber);
-  const difs = execTimes(getDiff, 3);
+  const difs = [];
+  for (let i = 0; i <= 2; i++) {
+    const diff = getDiff();
+    let containsDiff = false;
+    for (const d in difs) {
+      if (compareDiffs(difs[d], diff)) {
+        containsDiff = true;
+      }
+    }
+    if (!containsDiff) {
+      difs.push(diff);
+    } else {
+      i--;
+    }
+  }
+
   for (let i = 0; i < 6; i++) {
     if (sequenceType === SEQUENTIAL) {
       sequence.push(getNextNumber(sequence[i], difs[i % 3]));

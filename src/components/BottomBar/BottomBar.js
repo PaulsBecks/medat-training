@@ -31,7 +31,9 @@ export default ({ setSelectedQuiz }) => (
     <div>
       <Button
         className="mt-de-bottom-bar-button mt-de-bottom-bar-icon-button"
-        onClick={() => setSelectedQuiz("sequence")}
+        onClick={() => {
+          document.location.href = "https://www.instagram.com/aufgabenmedat/";
+        }}
       >
         <Icon.Insta />
       </Button>
